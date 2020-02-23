@@ -100,6 +100,8 @@ public class NativeSettings extends CordovaPlugin {
             intent = new Intent(android.provider.Settings.ACTION_NFC_PAYMENT_SETTINGS);
         } else if (action.equals("nfc_settings")) {
             intent = new Intent(android.provider.Settings.ACTION_NFC_SETTINGS);
+        } else if (action.equals("notification_access")) {
+            intent = new Intent(android.provider.Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS);
         } else if (action.equals("notification_id")) {
 			// from: https://stackoverflow.com/questions/32366649/any-way-to-link-to-the-android-notification-settings-for-my-app
 			intent = new Intent();
